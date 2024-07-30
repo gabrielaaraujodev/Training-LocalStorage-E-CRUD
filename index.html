@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="page">
+        <div class="adjustInputs">
+            <label for="book_name">Nome do Livro</label>
+            <input type="text" id="book_name">
+        </div>
+
+        <div class="adjustInputs">
+            <label for="book_author">Autor</label>
+            <input type="text" id="book_author">
+        </div>
+
+        <div class="adjustInputs">
+            <label for="book_date">Ano</label>
+            <input type="date" id="book_date">
+        </div>
+        
+        <button id="save_books" onclick="fillBooksToSetOnDB()">Adicionar</button>
+        <button id="get_books" onclick="showBooksFromDB()">Mostrar Livros</button>
+    </div>
+
+    <div id="htmlBooks"></div>
+</body>
+</html>
